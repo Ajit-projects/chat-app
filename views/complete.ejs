@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CHAT</title>
+  <meta charset="utf-8">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+  <link rel="stylesheet" type="text/css" href="css/complete.css">
+  </head>
+ 
+  <body>
+    <div>
+      <div class="title">
+        <h1>CHAT</h2>
+          <a  href="/">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+          </a>
+    </div>
+    </div>
+      <div class="containers">
+        
+        <%  posts.forEach(function(post){ %>
+            <div class="contain">
+              <h1><%=post.title%></h1>
+              <p>
+              <%=post.content%>
+              </p>
+          
+            </div>
+         <% }) %>
+     </div>>
+  
+    <div class="posting">
+        <form class="" action="/complete" method="post">
+            <div class="form-group">
+              <label>Name</label>
+              <input class="input_text" type="text" name="title">
+              <br>
+              <br>
+              <label>Message</label>
+              <br>
+              <textarea class="input_text" name="content" rows="5" cols="30"></textarea>
+    
+            </div>
+            
+            <button class="button" type="submit" name="button">Post</button>
+          </form>
+    </div>
+
+  </body>

@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="login_form_container">
+      <div class="login_form">
+        <h2>Login</h2>
+
+        <form class="" action="/login" method="post">
+
+            <div class="input_group">
+              <i class="fa fa-envelope"></i>
+            <input  type="text"
+            class="input_text"
+            autocomplete="off"
+             name="email">
+            </div>
+            <div class="input_group">
+              <i class="fa fa-unlock-alt"></i>
+            <input  type="password"
+            class="input_text"
+            autocomplete="off"
+             name="password"></input>
+            </div>
+                <centre>
+                  <div>
+                    <button class="button"  type="submit" name="button">Login</button>
+                  </div>
+                </centre>
+
+        </form>
+
+          <div>
+              <div class="fotter">
+                  <h4>New Account ?</h4>
+                <a href="/register">SignUp</a>
+              </div>
+
+          </div>
+
+
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
